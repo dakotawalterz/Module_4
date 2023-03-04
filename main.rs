@@ -80,7 +80,7 @@ impl Game {
     }
 }
 
-/// The direction the snake moves in.
+
 #[derive(Clone, PartialEq)]
 enum Direction {
     UP,
@@ -164,7 +164,7 @@ pub struct Food {
 }
 
 impl Food {
-    // Return true if snake ate food this update
+   
     fn update(&mut self, s: &Snake) -> bool {
         let front = s.snake_parts.front().unwrap();
         if front.0 == self.x && front.1 == self.y {
@@ -193,7 +193,7 @@ impl Food {
 }
 
 fn main() {
-    // Change this to OpenGL::V2_1 if this fails.
+   
     let opengl = OpenGL::V3_2;
 
     const COLS: u32 = 30;
